@@ -1,0 +1,7 @@
+{
+  "version": "V1",
+  "date": "2026-11-18",
+  "notes": [
+    "V1 — Première version navigateur du BNB Analyzer, reprise de l'application Python. Lecture des comptes annuels déposés à la Banque nationale depuis trois sources : le PDF du dépôt, le CSV de Consult et un paquet .afbnb. Tout est traité dans le navigateur, aucune donnée n'est envoyée à un serveur, et la page fonctionne hors ligne.\n• Postes du bilan et du compte de résultats, bilan social et annexe des participations, avec contrôles de cohérence (actif = passif, sous-totaux).\n• Score de santé financière sur six piliers, ratios usuels et comparaison entre exercices.\n• Valorisation indicative par cinq méthodes (DCF, multiple d'EBITDA, multiple de chiffre d'affaires, actif net comptable, PER), avec retraitements de normalisation, pondération réglable et décote d'illiquidité.\n• Export vers la suite Altesia Finance : lien #bnb=, fichier .afbnb, CSV des postes et des ratios, dossier complet en JSON.\n• Corrections par rapport à la version Python : lecture des lignes à un seul montant (exercice sans comparatif), séparation du bilan social des postes comptables, dénominations des participations qui courent sur plusieurs lignes, seuils de taille du CSA relevés pour les exercices ouverts après le 31/12/2023, et contrôle du passif incluant le compte 492/3."
+  ]
+}
