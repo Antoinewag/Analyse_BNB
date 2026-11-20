@@ -142,7 +142,7 @@ $('go').addEventListener('click', async () => {
   if (p1.length < 16) return say('bad', 'La phrase de passe doit compter au moins 16 caractères.');
   if (p1 !== p2) return say('bad', 'Les deux phrases de passe ne correspondent pas.');
   const html = await f.text();
-  if (/id="payload" type="application\/octet-stream"/.test(html)) return say('bad', 'Cette page est déjà protégée : choisissez la version non protégée (le fichier index.html assemblé).');
+  if (/id="payload" type="application\/octet-stream"/.test(html)) return say('bad', 'Cette page est déjà protégée : choisissez la version non protégée (BNB_Analysis.html).');
   if (!/Altesia Finance/.test(html)) return say('bad', 'Ce fichier ne ressemble pas à la suite Altesia Finance.');
   const csp = (/<meta http-equiv="Content-Security-Policy" content="([^"]+)"/.exec(html) || [])[1];
   if (!csp) return say('bad', 'Politique de sécurité introuvable dans la page : fichier inattendu.');
